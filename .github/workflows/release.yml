@@ -31,7 +31,7 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: release.zip
-        asset_name: MonogameHelloWorld.zip
+        asset_name: MonogameBouncingBall.zip
         tag: ${{ github.ref }}
         overwrite: true
         body: "Please enjoy release ${{ steps.set_env.outputs.RELEASE_VERSION }}"
