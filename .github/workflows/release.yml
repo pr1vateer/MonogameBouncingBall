@@ -23,7 +23,7 @@ jobs:
       run: dotnet publish -c Release -r win-x64 /p:PublishReadyToRun=false /p:TieredCompilation=false --self-contained
     - name: Zip
       run: |
-            cp -r bin/Release/net6.0/win-x64/publish/ .
+            cp -r bin/Release/net8.0/win-x64/publish/ .
             zip -r release.zip publish/
             md5sum release.zip
     - name: Upload binaries to release
